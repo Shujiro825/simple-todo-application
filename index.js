@@ -32,7 +32,7 @@ function addTask(title) {
  * 引数で与えられる「やること」の達成状態(isDone)を、
  * 現在の状態と反対になるように更新してください。
  * 
- * 注) クリックしたときに、この関数が呼ばれる処理は既に書かれています。
+ * 注) クリックしたときに、この関数が呼ばれる処理は既に書かれています。a
  * 
  * 例:
  * before   |   after
@@ -45,7 +45,7 @@ function onUpdateIsDone(task) {
 
     // 達成状態を更新(このままだと、現在の達成状態で更新されてしまう！)
     const currentValue = task.isDone;
-    task.isDone = currentValue;
+    task.isDone = true;
 
     return task;
 }
@@ -69,7 +69,7 @@ function onTaskTitleClicked(task) {
 
     // 達成状態を更新(このままだと、現在の達成状態で更新されてしまう！)
     const currentValue = task.isDone;
-    task.isDone = currentValue;
+    task.isDone = true;
 
     return task;
 }
